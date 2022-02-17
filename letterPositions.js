@@ -15,12 +15,13 @@ function assertArraysEqual(arr1, arr2) {
   }
 }
 
-
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
+    // each letter is sentence[i]
     const letter = sentence[i];
-    if (letter === " ") { /* if letter = space then move on */
+    if (letter === " ") {
+      /* if letter = space then move on */
       continue;
     }
     if (results[letter]) {
@@ -33,9 +34,7 @@ const letterPositions = function(sentence) {
 };
 
 // test cases:
-const result1 = letterPositions('hello');
+const result1 = letterPositions("hello");
 assertArraysEqual(result1["l"], [2]);
 assertArraysEqual(result1["h"], [0]);
 assertArraysEqual(result1["o"], [4]);
-
-
