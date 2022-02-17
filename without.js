@@ -15,13 +15,17 @@ function assertArraysEqual(arr1, arr2) {
   }
 }
 function without(sourceArray, removeItem) {
+  // spread opperator
   let newArray = [...sourceArray];
+  // loop over input array
   for (let i = 0; i < sourceArray.length; i++) {
+    // loop over remove array
     for (let j = 0; j < removeItem.length; j++) {
+      // compare newArray to remove array
       if (newArray[i] === removeItem[j]) {
         newArray.splice([i], 1);
       }
     }
-  }  
+  }
   return newArray;
 }

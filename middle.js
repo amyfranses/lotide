@@ -5,9 +5,11 @@ const middle = function (array) {
     return [];
   }
   const middleElement = array.length / 2;
+  // array of odd length return middle
   if (array.length % 2 === 1) {
     return array[Math.floor(middleElement)];
   } else {
+    // array of even elements return 2 elements
     return [array[middleElement - 1], array[middleElement]];
   }
 };
