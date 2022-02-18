@@ -5,8 +5,9 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-// Implement the function findKeyByValue taking object and a value.
-// scan the object (Object.keys()???) and return the first key which contains the given value.
+
+// scan the object keys Object.keys()
+// return the first key which contains the given value
 // If no key with that given value is found, then it should return undefined.
 const findKeyByValue = function(object, value) {
   if (value === undefined) {
