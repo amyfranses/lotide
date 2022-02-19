@@ -27,8 +27,8 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 - `assertEqual(...)`: takes in 2 values and returns true if they are equal, false if they are not.
-- `head(...)`: retrieves the first element from an array
-- `tail(...)`: retrieves every element except the first element of an array
+- `head(...)`: retrieves the first element from an array.
+- `tail(...)`: retrieves every element except the first element of an array.
 - `eqArrays(...)`: takes in 2 arrays and returns true if they are equal, false if they are not.
 - `asserArraysEqual(...)`: takes in 2 arrays and returns true if they are equal, false if they are not.
 - `without(...)`: returns source array having removed specified items.
