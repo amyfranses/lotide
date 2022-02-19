@@ -5,6 +5,4 @@ const tail = function (array) {
   return arr;
 };
 
-console.log(tail([1, 2, 3, 4]));
-
 module.exports = tail;
